@@ -1,0 +1,204 @@
+:root {
+  /* colours */
+  --s-blue-dark:    #1c3664;
+  --s-blue-mid:     #1a5276;
+  --s-blue-light:   #2e86c1;
+  --s-blue-pale:    #d6eaf8;
+  --s-white:        #ffffff;
+  --s-bg:           #f4f6f8;
+  --s-bg-card:      #ffffff;
+  --s-text-primary: #1a1a2e;
+  --s-text-muted:   #5d6d7e;
+  --s-border:       #d5d8dc;
+  --s-red:          #c0392b;
+  --s-green:        #1e8449;
+  --s-font:         'Segoe UI', Calibri, Arial, sans-serif;
+  --s-font-mono:    'Consolas', 'Courier New', monospace;
+  --s-radius:       4px;
+  --s-radius-lg:    8px;
+  --s-shadow:       0 2px 6px rgba(28,54,100,.15);
+  --s-transition:   0.18s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--s-font);
+  font-size: 14px;
+  color: var(--s-text-primary);
+  background: var(--s-bg);
+  line-height: 1.5;
+}
+
+.s-header {
+  background: var(--s-blue-dark);
+  color: var(--s-white);
+  padding: 16px;
+  box-shadow: var(--s-shadow);
+  margin-bottom: 20px;
+}
+
+.s-header h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.s-logo-box {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+button {
+  background: var(--s-blue-mid);
+  color: var(--s-white);
+  border: none;
+  padding: 8px 16px;
+  border-radius: var(--s-radius);
+  cursor: pointer;
+  transition: var(--s-transition);
+}
+
+button:hover {
+  background: var(--s-blue-dark);
+}
+
+input[type="file"],
+select {
+  padding: 8px;
+  border: 1px solid var(--s-border);
+  border-radius: var(--s-radius);
+  background: var(--s-white);
+  font-family: var(--s-font);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid var(--s-border);
+}
+
+th {
+  background: var(--s-blue-pale);
+  font-weight: 700;
+}
+
+.config-code-display {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px;
+  background: var(--s-bg-card);
+  border: 1px solid var(--s-border);
+  border-radius: var(--s-radius);
+  font-family: var(--s-font-mono);
+  margin-bottom: 8px;
+  overflow-x: auto;
+}
+
+.code-row,
+.code-position-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4px;
+}
+
+.code-position-row {
+  margin-top: 4px;
+}
+
+.code-position-group {
+  display: flex;
+  gap: 0;
+}
+
+.code-position-group-special {
+  border-radius: 4px;
+  padding: 2px 4px;
+  background: rgba(26,82,118,.08);
+  display: flex;
+  gap: 0;
+}
+
+.code-position-group-special .code-position:not(:last-child) {
+  margin-right: 0;
+}
+
+.code-char,
+.code-position {
+  width: 20px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.code-position {
+  background: rgba(28,54,100,.08);
+  color: var(--s-text-muted);
+  font-size: 12px;
+}
+
+.code-char.selected {
+  background: var(--s-blue-dark);
+  color: var(--s-white);
+}
+
+.code-char.empty {
+  background: transparent;
+  color: var(--s-text-muted);
+  border: 1px dashed var(--s-border);
+}
+
+.attribute-order table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.attribute-order th, .attribute-order td { padding: 6px 8px; border: 1px solid var(--s-border); }
+.attribute-order th { background: var(--s-blue-pale); }
+
+.comparison-display { padding: 8px; background: var(--s-bg-card); border: 1px solid var(--s-border); border-radius: var(--s-radius); margin-top: 8px; }
+.comparison-display div { margin: 4px 0; font-family: var(--s-font-mono); }
+
+.selectors {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px 16px;
+  align-items: center;
+}
+
+.selectors > div {
+  display: contents;
+}
+
+.selectors label {
+  text-align: right;
+  font-weight: 600;
+  position: relative;
+}
+
+.attribute-id-hint {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.85em;
+  font-weight: 400;
+  color: var(--s-text-muted);
+  opacity: 0;
+  transition: opacity var(--s-transition);
+}
+
+.selectors label:hover .attribute-id-hint {
+  opacity: 1;
+}
+
+.selectors select {
+  width: 100%;
+}

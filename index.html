@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TA36 Product Configurator</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <header class="s-header">
+    <h1>TA36 Product Configurator</h1>
+  </header>
+
+  <main class="container">
+    <div class="upload-panel">
+      <div class="file-input-group">
+        <label>Configuration (Configuration.json is loaded automatically)</label>
+        <label>Product File (CSV): <input id="products-file" type="file" accept=".csv" /></label>
+      </div>
+      <div class="status" id="status">Ready.</div>
+    </div>
+
+    <section class="selectors-section">
+      <h2>Attributes</h2>
+      <div id="selectors" class="selectors"></div>
+      <button id="reset-filters">Reset</button>
+    </section>
+
+    <section class="config-code-section">
+      <h2>Configuration Code</h2>
+      <div id="config-code-display" class="config-code-display"></div>
+      <h3>Attribute Order</h3>
+      <div id="attribute-order-display" class="attribute-order"></div>
+      <h3>Comparison with Example</h3>
+      <div id="comparison-display" class="comparison-display"></div>
+    </section>
+
+    <section class="results-section">
+      <h2>Products</h2>
+      <div id="results" class="table-wrapper"></div>
+      <div id="no-results" class="status hidden">No products found. This variant must be opened.</div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="ta36-configurator.js"></script>
+</body>
+</html>

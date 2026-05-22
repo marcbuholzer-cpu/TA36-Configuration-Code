@@ -1,0 +1,187 @@
+{
+  "product": "TA36",
+
+  "orderCode": {
+    "pattern": "TA36-[main]-[variant]"
+  },
+
+  "structure": [
+    { "position": 1, "attribute": "Actuator", "length": 1, "encoded": true },
+    { "position": 2, "attribute": "Mounting", "length": 1, "encoded": true },
+    { "position": 3, "attribute": "Number of poles", "length": 1, "encoded": true },
+    { "position": 4, "attribute": "Sealing", "length": 1, "encoded": true },
+    { "position": 5, "attribute": "Switching behavior", "length": 1, "encoded": true },
+    { "position": 6, "attribute": "Terminal", "length": 1, "encoded": true },
+    { "position": 7, "attribute": "Overload protection", "length": 1, "encoded": true },
+    { "position": 8, "attribute": "Illumination voltage", "length": 1, "encoded": true },
+    { "position": 9, "attribute": "Illumination color", "length": 1, "encoded": true },
+    { "position": 10, "attribute": "Front color", "length": 1, "encoded": true },
+    { "position": 11, "attribute": "Actuator color", "length": 1, "encoded": true },
+    { "position": 12, "attribute": "Marking type", "length": 1, "encoded": true },
+    { "position": 13, "attribute": "Marking color", "length": 1, "encoded": true },
+    { "position": 14, "attribute": "Rated current", "length": 3, "encoded": true },
+    { "position": 15, "attribute": "Features", "length": 2, "encoded": true },
+    { "position": 16, "attribute": "Accessories", "length": 1, "encoded": true },
+    { "position": 17, "attribute": "Variant", "length": 3, "encoded": true },
+
+    { "attribute": "Rated voltage", "encoded": false }
+  ],
+
+  "attributes": {
+    "Actuator": [
+      { "key": "R", "label": "rocker" }
+    ],
+
+    "Mounting": [
+      { "key": "S", "label": "snap-in" }
+    ],
+
+    "Number of poles": [
+      { "key": "1", "label": "1-pole" },
+      { "key": "2", "label": "2-poles" }
+    ],
+
+    "Sealing": [
+      { "key": "4", "label": "w/o sealing" }
+    ],
+
+    "Switching behavior": [
+      { "key": "F", "label": "on/off" },
+      { "key": "M", "label": "momentary" }
+    ],
+
+    "Terminal": [
+      { "key": "Q", "label": "QC 6.3 x 0.8" }
+    ],
+
+    "Overload protection": [
+      { "key": "1", "label": "1-pole protected" },
+      { "key": "2", "label": "2-pole protected" }
+    ],
+
+    "Illumination voltage": [
+      { "key": "0", "label": "no lamp" }
+    ],
+
+    "Illumination color": [
+      { "key": "0", "label": "none" }
+    ],
+
+    "Front color": [
+      { "key": "B", "label": "black" },
+      { "key": "G", "label": "grey" },
+      { "key": "W", "label": "white" },
+      { "key": "N", "label": "no front cover" }
+    ],
+
+    "Actuator color": [
+      { "key": "W", "label": "white" },
+      { "key": "B", "label": "black" },
+      { "key": "R", "label": "red" },
+      { "key": "G", "label": "green" },
+      { "key": "L", "label": "blue" },
+      { "key": "Y", "label": "yellow" },
+      { "key": "A", "label": "orange" }
+    ],
+
+    "Marking type": [
+      { "key": "N", "label": "none" },
+      { "key": "H", "label": "IO" },
+      { "key": "F", "label": "ON-OFF" }
+    ],
+
+    "Marking color": [
+      { "key": "W", "label": "printed white" },
+      { "key": "B", "label": "printed black" },
+      { "key": "E", "label": "relief" },
+      { "key": "N", "label": "nothing" }
+    ],
+
+    "Rated current": [
+      { "key": "Z05", "label": "50mA" },
+      { "key": "J01", "label": "100mA" },
+      { "key": "Z15", "label": "150mA" },
+      { "key": "J02", "label": "200mA" },
+      { "key": "Z25", "label": "250mA" },
+      { "key": "J03", "label": "300mA" },
+      { "key": "Z35", "label": "350mA" },
+      { "key": "J04", "label": "400mA" },
+      { "key": "Z45", "label": "450mA" },
+      { "key": "J05", "label": "500mA" },
+      { "key": "J06", "label": "600mA" },
+      { "key": "J07", "label": "700mA" },
+      { "key": "J08", "label": "800mA" },
+      { "key": "J09", "label": "900mA" },
+      { "key": "J10", "label": "1A" },
+      { "key": "J11", "label": "1.1A" },
+      { "key": "J12", "label": "1.2A" },
+      { "key": "J13", "label": "1.3A" },
+      { "key": "J14", "label": "1.4A" },
+      { "key": "J15", "label": "1.5A" },
+      { "key": "J16", "label": "1.6A" },
+      { "key": "J17", "label": "1.7A" },
+      { "key": "J18", "label": "1.8A" },
+      { "key": "J19", "label": "1.9A" },
+      { "key": "J20", "label": "2A" },
+      { "key": "J21", "label": "2.1A" },
+      { "key": "J22", "label": "2.2A" },
+      { "key": "J23", "label": "2.3A" },
+      { "key": "J25", "label": "2.5A" },
+      { "key": "J28", "label": "2.8A" },
+
+      { "key": "030", "label": "3A" },
+      { "key": "032", "label": "3.2A" },
+      { "key": "035", "label": "3.5A" },
+      { "key": "037", "label": "3.7A" },
+      { "key": "040", "label": "4A" },
+      { "key": "042", "label": "4.2A" },
+      { "key": "045", "label": "4.5A" },
+      { "key": "047", "label": "4.7A" },
+      { "key": "050", "label": "5A" },
+      { "key": "052", "label": "5.2A" },
+      { "key": "055", "label": "5.5A" },
+      { "key": "057", "label": "5.7A" },
+      { "key": "060", "label": "6A" },
+      { "key": "065", "label": "6.5A" },
+      { "key": "070", "label": "7A" },
+      { "key": "075", "label": "7.5A" },
+      { "key": "080", "label": "8A" },
+      { "key": "085", "label": "8.5A" },
+      { "key": "090", "label": "9A" },
+      { "key": "100", "label": "10A" },
+      { "key": "105", "label": "10.5A" },
+      { "key": "110", "label": "11A" },
+      { "key": "115", "label": "11.5A" },
+      { "key": "120", "label": "12A" },
+      { "key": "130", "label": "13A" },
+      { "key": "140", "label": "14A" },
+      { "key": "150", "label": "15A" },
+      { "key": "160", "label": "16A" },
+      { "key": "170", "label": "17A" },
+      { "key": "180", "label": "18A" },
+      { "key": "190", "label": "19A" },
+      { "key": "200", "label": "20A" }
+    ],
+
+    "Features": [
+      { "key": "00", "label": "No other features" },
+      { "key": "T1", "label": "Magnetic release slow 1-pole protected" },
+      { "key": "T2", "label": "Magnetic release slow 2-pole protected" },
+      { "key": "F1", "label": "Magnetic release fast 1-pole protected" },
+      { "key": "F2", "label": "Magnetic release fast 2-pole protected" }
+    ],
+
+    "Accessories": [
+      { "key": "0", "label": "none" }
+    ],
+
+    "Variant": [
+      { "key": "000", "label": "Variant" }
+    ],
+
+    "Rated voltage": [
+      { "key": "8", "label": "277V AC / 32V DC" },
+      { "key": "9", "label": "277V AC / 60V DC" }
+    ]
+  }
+}
